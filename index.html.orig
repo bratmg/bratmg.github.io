@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My PDF Document</title>
+    <meta http-equiv="refresh" content="0; url=call_for_abstracts.pdf">
+</head>
+<body>
+    <p>Redirecting to PDF... <a href="call_for_abstracts.pdf">Click here if it doesn't load</a>.</p>
+</body>
+</html>
