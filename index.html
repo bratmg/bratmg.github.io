@@ -1,10 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My PDF Document</title>
-    <meta http-equiv="refresh" content="0; url=call_for_abstracts.pdf">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference 2026 | Call for Papers</title>
+
+    <style>
+        :root {
+            --primary: #0B2545;   /* Navy */
+            --accent: #C8102E;    /* Red */
+            --light: #F5F7FA;     /* Light background */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--primary);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+
+        /* HERO HEADER */
+        .hero {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: var(--primary);
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .deadline {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .committee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .submission-box {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent);
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .btn-download:hover {
+            background: #a50d25;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .ack {
+            font-style: italic;
+            background: #fff4f6;
+            padding: 15px;
+            border-left: 5px solid var(--accent);
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            nav a { display: inline-block; margin: 5px; }
+        }
+
+        .committee-list p {
+            margin: 6px 0;
+            padding-left: 10px;
+            border-left: 3px solid var(--accent);
+        }
+        .cfp-description {
+            background: var(--light);
+            padding: 20px;
+            border-left: 4px solid var(--accent);
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .cfp-description ul {
+            margin-bottom: 15px;
+        }
+
+        .cfp-description p {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Redirecting to PDF... <a href="call_for_abstracts.pdf">Click here if it doesn't load</a>.</p>
+
+<header class="hero">
+    <img src="./assets/header.png" alt="ICAAMS 2026 Dubai Conference Banner">
+</header>
+
+<nav>
+    <a href="#icaams">ICAAMS</a>
+    <a href="#cfp">CFP</a>
+    <a href="#dates">Dates</a>
+    <a href="#committee">Committee</a>
+    <a href="#guidelines">Guidelines</a>
+    <a href="#submit">How to Submit</a>
+</nav>
+
+<section id="icaams">
+    <h2>About ICAAMS</h2>
+    <div class="icaams-description">
+    <p><strong>International Conference on Advanced Air Mobility Systems</strong></p>
+
+    <p>
+        The ‘International Conference on Advanced Air Mobility Systems (ICAAMS)’ 
+        series is a yearly ‘Joint VFS Chapters Event’. It now encompasses mainly the new and
+        emerging Chapters in West, Central & Southeast Asia, and the Oceania. ICAAMS
+        Series publishes ‘Proceedings’ compiling ‘Referred Papers’ & ‘Interactive Workshop
+        Outcomes’.
+    </p>
+
+    <p>
+        ICAAMS focuses on the new emerging Aerospace Platforms referred as ‘Advanced
+        Air Mobility (AAM) Platforms’, covering ‘Urban Air Mobility’ and ‘Regional Air Mobility’.
+        The Scope of the Conference is across Aerospace and Aviation on contemporary
+        topic areas applicable to AAM as follows, with no deviations.
+    </p>
+
+    <p><strong>Aerospace</strong></p>
+    <ul>
+        <li>Aerodynamics: Transitional flight</li>
+        <li>Structures and Materials: Light-weight</li>
+        <li>Propulsion: Alternate to Fuel including Hybrid</li>
+        <li>Systems: Onboard and Offboard</li>
+        <li>Design: Multi-rotor or Compound</li>
+    </ul>
+
+    <p><strong>Aviation</strong></p>
+    <ul>
+        <li>Operations: Flight and Ground</li>
+        <li>Airworthiness & Regulations: Operational and Technical</li>
+        <li>Airspace Management: Urban and Semi-Urban</li>
+        <li>Air Transport: Planning and Economics</li>
+        <li>Product Support: MROs and Supply Chain</li>
+    </ul>
+</div>
+</section>
+
+<section id="cfp">
+    <h2>Call for Papers (CFP)</h2>
+    <p>We invite researchers and practitioners to submit original work. You can view the full call for abstracts below or download the PDF version for your records.</p>
+    
+    <a href="./assets/call_for_abstracts.pdf" download class="btn-download">
+        📄 Download Call for Abstracts (PDF)
+    </a>
+</section>
+
+<section id="dates">
+    <h2>Dates & Deadlines</h2>
+    <ul>
+        <li><strong>Abstract Submission Deadline:</strong> <span class="deadline">31 May 2026</span></li>
+        <li><strong>Full Paper Submission:</strong> <span class="deadline">31 August 2026</span></li>
+        <li><strong>Reviewed Paper Submission:</strong> 31 October 2026</li>
+        <li><strong>Paper Presentations:</strong> 2-4 December 2026</li>
+        <li><strong>Workshop:</strong> 5 December 2026</li>
+    </ul>
+</section>
+
+<section id="committee">
+    <h2>ICAAMS-4 – VFS Interchapter Organising Committee</h2>
+
+    <p>
+        VFS UAE Chapter will host the Conference at Dubai in the American University Dubai Campus,
+        duly supported by VFS Chapters in West, Central & Southeast Asia, and the Oceania.
+    </p>
+
+    <div class="committee-list">
+        <p><strong>Convenor:</strong> Australia – Arvind Sinha</p>
+        <p><strong>Chair:</strong> India - Vijaya Kumar Mudubagilu</p>
+        <p><strong>Vice Chair:</strong> UAE – David Holmes</p>
+        <p><strong>Deputy Chair:</strong> Thailand - Auraluck Pichitkul</p>
+        <p><strong>Program Chair:</strong> India – Bharath Govindarajan</p>
+        <p><strong>Keynotes Chair:</strong> UAE – Wael Baazi</p>
+        <p><strong>Technical Chair:</strong> UAE – Cary Atkins</p>
+        <p><strong>Sessions Chair:</strong> Singapore – George Brian</p>
+        <p><strong>Presentation Chair:</strong> Australia – Aditya Paranjape & Vicky Chang</p>
+        <p><strong>Workshop Chair:</strong> UAE – David Holmes</p>
+        <p><strong>Webpage Chair:</strong> Thailand – Issareephat Kanishthanonda</p>
+        <p><strong>Advisory Chairs:</strong> USA - Mike Hirschberg; Canada - Somen Choudhury</p>
+        <p><strong>Secretary:</strong> India - Ananth Srinivas</p>
+        <p><strong>Vice Chair ICAAMS-5:</strong> Australia – KC Wong and Aditya Paranjape</p>
+    </div>
+</section>
+
+<section id="guidelines">
+    <h2>Author & Submission Guidelines</h2>
+    <p>Submissions must be original and follow the formatting rules given in the <a href="./assets/call_for_abstracts.pdf" target="_blank">call for abstracts</a> document</p>
+    
+</section>
+
+<section id="submit">
+    <h2>Where & How to Submit <span class="coming-soon">(Coming Soon)</span></h2>
+    <!-- <div class="submission-box">
+        <p>All submissions must be handled via <strong>Microsoft CMT</strong>:</p>
+        <p><strong>Step 1:</strong> Go to the 
+            <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener noreferrer">
+                <strong>CMT Submission Portal</strong>
+            </a>.
+        </p>
+        <p><strong>Step 2:</strong> Search for "International Conference on Advanced Air Mobility Systems 2026".</p>
+        <p><strong>Step 3:</strong> Upload your PDF and fill in the required metadata.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Microsoft CMT Acknowledgment</h2>
+    <div class="ack">
+        <p><strong>Acknowledgment:</strong> This conference uses Microsoft CMT for the submission and review process. By submitting your work, you acknowledge that your data will be processed according to the Microsoft CMT privacy policy and conference-specific reviewer guidelines.</p>
+    </div>
+</section> -->
+
+<footer>
+    <p>&copy; 2026 Conference Organizers. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
