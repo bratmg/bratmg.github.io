@@ -22,19 +22,18 @@
             background: white;
         }
 
-        /* HERO HEADER */
-        .hero {
-            width: 100%;
-            overflow: hidden;
-        }
-
         .hero img {
             width: 100%;
             height: auto;
             display: block;
-            border-bottom: 4px solid var(--accent);
+            margin-bottom: 0px; /* adds white space above red line */
         }
 
+        .hero {
+            border-bottom: 4px solid var(--accent);
+            padding-bottom: 12px; /* controls spacing */
+        }
+        
         h2 {
             color: var(--primary);
             margin-bottom: 10px;
@@ -167,7 +166,7 @@
             margin: 20px 0 10px 0;
             font-size: 1.1em;
         }
-
+        
     </style>
 </head>
 
