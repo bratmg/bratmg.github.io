@@ -174,6 +174,48 @@
             margin: 15px 0 8px 0;
             line-height: 1.5;
         }
+        
+        .registration-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.98em;
+        }
+
+        .registration-table th,
+        .registration-table td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .registration-table th {
+            background: var(--primary);
+            color: white;
+        }
+
+        .registration-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .registration-note {
+            font-style: italic;
+            background: #fafafa;
+        }
+
+        .membership-link {
+            margin-top: 20px;
+        }
+
+        .membership-link a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .membership-link a:hover {
+            text-decoration: underline;
+        }
+        
     </style>
 </head>
 
@@ -201,6 +243,7 @@
     <a href="#committee">Committee</a>
     <a href="#guidelines">Guidelines</a>
     <a href="#submit">How to Submit</a>
+    <a href="#registration">Registration</a>
 </nav>
 
 <section id="icaams">
@@ -314,6 +357,53 @@
     <div class="ack">
         <p><strong>Acknowledgment:</strong> The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
     </div>
+</section>
+
+<section id="registration">
+    <h2>Registration</h2>
+
+    <table class="registration-table">
+        <thead>
+            <tr>
+                <th>Rates</th>
+                <th>VFS Member</th>
+                <th>Non-Member</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Regular Attendee</td>
+                <td>$450</td>
+                <td>$550</td>
+            </tr>
+
+            <tr>
+                <td>Speaker, Government, or Military</td>
+                <td>$400</td>
+                <td>$500</td>
+            </tr>
+
+            <tr>
+                <td>Fully retired or full-time student</td>
+                <td>$275</td>
+                <td><strong><em>Must enrol in VFS membership</em></strong></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="registration-note">
+                    Registration includes coffee breaks, lunches, social and conference proceedings
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="membership-link">
+        Weblink to Register for VFS Membership:
+        <a href="https://vfs.users.membersuite.com/auth/portal-login?isSignUp=true/" target="_blank" rel="noopener noreferrer">
+            Member Portal
+        </a>
+    </p>
 </section>
 
 <footer>
