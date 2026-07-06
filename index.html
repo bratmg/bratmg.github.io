@@ -243,6 +243,45 @@
             font-weight: 600;
             letter-spacing: 0.1px;
         }
+
+        .payment-details {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fafafa;
+            padding: 12px 16px;
+        }
+
+        .payment-details summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 1.05em;
+        }
+
+        .payment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .payment-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        .payment-table td:first-child {
+            width: 220px;
+            color: var(--primary);
+        }
+
+        .payment-note {
+            margin-top: 15px;
+            font-style: italic;
+            color: #555;
+        }
+
     </style>
 </head>
 
@@ -255,7 +294,18 @@
     <strong><u>Venue:</u></strong> Room EMBA 115, School of Engineering, American University in Dubai,<br>
     Sheikh Zayed Road, Interchange 5, Exit 32, Dubai Media City.<br><br>
 
-    <strong><u>Hotel:</u></strong> Radisson Blu Hotel, Dubai Media City
+<strong><u>Recommended Hotels:</u></strong>
+<a href="https://mediaonehotel.com" target="_blank" rel="noopener noreferrer">
+    Media One Hotel
+</a>
+
+
+&#8226;
+<a href="https://www.rotana.com/arjaanhotelapartments/unitedarabemirates/dubai/arjaanbyrotanadubaimediacity"
+   target="_blank"
+   rel="noopener noreferrer">
+    Arjaan Rotana Hotel
+</a>
 </p>
 
 <p class="chapters-title">
@@ -435,6 +485,62 @@
             </tr>
         </tbody>
     </table>
+
+<section id="payment">
+    <h3>Bank Transfer Details</h3>
+
+    <details class="payment-details">
+        <summary>Click to view bank account details</summary>
+
+        <table class="payment-table">
+            <tr>
+                <td><strong>Bank Name</strong></td>
+                <td>National Australia Bank Limited</td>
+            </tr>
+
+            <tr>
+                <td><strong>Bank Address</strong></td>
+                <td>383 King Street, Melbourne, Australia 3000</td>
+            </tr>
+
+            <tr>
+                <td><strong>Account Name</strong></td>
+                <td>The AHS Australian Chapter</td>
+            </tr>
+
+            <tr>
+                <td><strong>Account Address</strong></td>
+                <td>61 Glenburnie Road, Vermont, Australia 3133</td>
+            </tr>
+
+            <tr>
+                <td><strong>BSB</strong></td>
+                <td>083251</td>
+            </tr>
+
+            <tr>
+                <td><strong>Account Number</strong></td>
+                <td>561623507</td>
+            </tr>
+
+            <tr>
+                <td><strong>SWIFT Code</strong></td>
+                <td>NATAAU3303M</td>
+            </tr>
+
+            <tr>
+                <td><strong>IRC</strong></td>
+                <td>083251</td>
+            </tr>
+        </table>
+
+        <p class="payment-note">
+            <strong>Note:</strong> The IRC number is identical to the BSB and is
+            used for international telegraphic transfers.
+        </p>
+    </details>
+</section>
+
 
     <p class="membership-link">
         Weblink to Register for VFS Membership:
