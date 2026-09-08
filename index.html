@@ -291,26 +291,121 @@
         border-radius: 6px;
         font-size: 0.95em;
         line-height: 1.6;
-    }
+        }
 
-    .payment-instructions p {
-        margin: 0 0 10px 0;
-    }
+        .payment-instructions p {
+            margin: 0 0 10px 0;
+        }
 
-    .payment-instructions p:last-child {
-        margin-bottom: 0;
-    }
+        .payment-instructions p:last-child {
+            margin-bottom: 0;
+        }
 
-    .payment-instructions a {
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 600;
-    }
+        .payment-instructions a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-    .payment-instructions a:hover {
-        text-decoration: underline;
-    }
+        .payment-instructions a:hover {
+            text-decoration: underline;
+        }
+ 
+        .sponsor-event {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
 
+            width: fit-content;
+            margin: 22px auto 24px auto;
+            padding: 12px 28px;
+
+            background: rgba(240, 240, 240, 0.55);
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+        }
+
+        .sponsor-event-title {
+            font-weight: bold;
+            font-size: 1em;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .sponsor-event img {
+            height: 65px;
+            width: auto;
+            display: block;
+        }
+
+        .vfs-heading {
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1em;
+            color: var(--primary);
+        }
+
+        .info-panel {
+            width: fit-content;
+            max-width: 90%;
+            margin: 18px auto 10px auto;
+            padding: 18px 35px;
+
+            background: rgba(235, 235, 235, 0.45);
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-radius: 12px;
+
+            text-align: center;
+        }
+
+        .info-item {
+            margin-bottom: 14px;
+        }
+
+        .info-label {
+            display: inline;
+            font-weight: bold;
+            text-decoration: underline;
+            color: var(--primary);
+        }
+
+        .info-text {
+            display: inline;
+        }
+
+        .info-text a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        .hotel-separator {
+            margin: 0 7px;
+        }
+        .sponsor-event {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            margin: 10px auto 20px auto;
+            padding: 0;
+
+            background: transparent;
+            border: none;
+        }
+
+        .sponsor-event-title {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1em;
+        }
+
+        .sponsor-event img {
+            height: 65px;
+            width: auto;
+            display: block;
+        }
     </style>
 </head>
 
@@ -319,26 +414,38 @@
 <header class="hero">
     <img src="./assets/header.png" alt="ICAAMS 2026 Dubai Conference Banner">
 </header>
-<p class="venue">
-    <strong><u>Venue:</u></strong> Auditorium, School of Engineering, American University in Dubai,<br>
-    Sheikh Zayed Road, Interchange 5, Exit 32, Dubai Media City.<br><br>
 
-<strong><u>Recommended Hotels: </u></strong>
-<a href="https://mediaonehotel.com" target="_blank" rel="noopener noreferrer">
-    Media One Hotel
-</a>
+<div class="info-panel">
 
-&#8226;
-<a href="https://www.rotana.com/arjaanhotelapartments/unitedarabemirates/dubai/arjaanbyrotanadubaimediacity"
-   target="_blank"
-   rel="noopener noreferrer">
-    Arjaan Rotana Hotel
-</a>
-</p>
+    <div class="info-item">
+        <div class="info-label">Venue:</div>
+        <div class="info-text">
+            Auditorium, School of Engineering, American University in Dubai,<br>
+            Sheikh Zayed Road, Interchange 5, Exit 32, Dubai Media City.
+        </div>
+    </div>
 
-<p class="chapters-title">
+    <div class="info-item">
+        <div class="info-label">Recommended Hotels:</div>
+        <div class="info-text">
+            <a href="https://mediaonehotel.com" target="_blank">Media One Hotel</a>
+            <span class="hotel-separator">•</span>
+            <a href="https://www.rotana.com/arjaanhotelapartments/unitedarabemirates/dubai/arjaanbyrotanadubaimediacity" target="_blank">Arjaan Rotana Hotel</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="sponsor-event">
+    <div class="sponsor-event-title">
+        Sponsor Awards and Dinner Evening
+    </div>
+    <img src="./assets/ge_aerospace.png" alt="GE Aerospace">
+</div>
+
+<h3 class="vfs-heading">
     Jointly Organised by VFS Chapters/Representatives
-</p>
+</h3>
 
 <div class="chapters">
     <img src="./assets/chapters.png" alt="VFS Chapters">
